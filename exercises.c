@@ -78,7 +78,16 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+
+  Vector vectorEstatico[n];
+
+for (short int i = 0; i<n; i++)
+  {
+    vectorEstatico[i].datos =calloc(n,sizeof(int));
+    vectorEstatico[i].capacidad=n;
+  }
+
+   return vectorEstatico;
 }
 
 /*
