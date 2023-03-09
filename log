@@ -198,3 +198,20 @@ exercises.c:124:14: error: invalid operands to binary + (have ‘Vector’ and �
       |           Vector
 Compilation failed
 b644231
+Thu 09 Mar 2023 09:54:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:124:31: error: expected expression before ‘->’ token
+  124 |     c->datos[i]=a->datos[i]+b[->datos[i];
+      |                               ^~
+exercises.c:124:42: error: expected ‘;’ before ‘}’ token
+  124 |     c->datos[i]=a->datos[i]+b[->datos[i];
+      |                                          ^
+      |                                          ;
+  125 | 
+  126 | }
+      | ~                                         
+Compilation failed
+709d49b
