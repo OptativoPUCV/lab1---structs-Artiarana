@@ -130,6 +130,19 @@ Ejercicio 8.
 Use las operaciones implementadas de vectores para 
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
+
+//Asumo que parte de la implementacion consiste en almacenar los miembros en vectores.
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
+  Vector *A,*B;
+
+  A=crearVector(2);  
+  B=crearVector(2);
+  
+  asignarValor(A,0,a1);
+  asignarValor(A,1,a2);
+  asignarValor(B,0,b1);
+  asignarValor(B,1,b2);
+  
+  sumaV(A,B,c);
 }
