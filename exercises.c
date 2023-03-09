@@ -25,8 +25,17 @@ Programe la función void arrayMaxMin(int *a, int n, int *max, int *min),
 la cual encuentra el máximo y el mínimo valor del arreglo a y los
 almacena en las variables apuntadas por max y min.
 */
-void arrayMaxMin(int *a, int n, int *max, int *min) {
-    
+void arrayMaxMin(int *arreglo, int n, int *ptrmax, int *ptrmin) {
+
+  int max=arreglo[0],min=arreglo[0];
+
+  for (short int i=0;i<n;i++)
+    {
+      max= arreglo[i]>max ? arreglo[i] :max;
+      min= arreglo[i]<min ? arreglo[i] :min;
+      }
+  *ptrmax=max;
+  *ptrmin=min;
 }
 
 
