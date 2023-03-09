@@ -79,7 +79,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
 
-  Vector vectorEstatico[n];
+  Vector *vectorEstatico=malloc(sizeof(Vector)*n);
 
 for (short int i = 0; i<n; i++)
   {
