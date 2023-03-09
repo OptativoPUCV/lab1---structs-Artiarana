@@ -34,8 +34,8 @@ void arrayMaxMin(int *arreglo, int n, int *ptrmax, int *ptrmin) {
       max= arreglo[i]>max ? arreglo[i] :max;
       min= arreglo[i]<min ? arreglo[i] :min;
       }
-  *ptrmax=max;
-  *ptrmin=min;
+  *ptrmax=max,*ptrmin=min;
+  
 }
 
 
