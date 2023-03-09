@@ -227,3 +227,36 @@ Thu 09 Mar 2023 10:05:31 PM UTC:
  tests:  8|0
 total_score: 70/70
 520ae0a
+Thu 09 Mar 2023 10:08:22 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   84 |   if (vectorEstatico=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+      |       ^~~~~~~~~~~~~~
+exercises.c:84:33: error: passing argument 1 of ‘exit’ makes integer from pointer without a cast [-Werror=int-conversion]
+   84 |   if (vectorEstatico=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:617:23: note: expected ‘int’ but argument is of type ‘char *’
+  617 | extern void exit (int __status) __THROW __attribute__ ((__noreturn__));
+      |                   ~~~~^~~~~~~~
+In file included from test.c:5:
+exercises.c:90:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   90 |     if (vectorEstatico[i].datos=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+      |         ^~~~~~~~~~~~~~
+exercises.c:90:44: error: passing argument 1 of ‘exit’ makes integer from pointer without a cast [-Werror=int-conversion]
+   90 |     if (vectorEstatico[i].datos=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            char *
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:617:23: note: expected ‘int’ but argument is of type ‘char *’
+  617 | extern void exit (int __status) __THROW __attribute__ ((__noreturn__));
+      |                   ~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+365565f
