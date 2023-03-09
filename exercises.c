@@ -81,13 +81,13 @@ Vector * crearVector(int n) {
 
   Vector *vectorEstatico=malloc(sizeof(Vector)*n);
   
-  if (vectorEstatico=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+  if (vectorEstatico=NULL) exit();
 
 for (short int i = 0; i<n; i++)
   {
     vectorEstatico[i].datos =calloc(n,sizeof(int));
     
-    if (vectorEstatico[i].datos=NULL) exit("NOT ENOUGH MEMORY FOR THE VECTOR");
+    if (vectorEstatico[i].datos=NULL) exit();
     
     vectorEstatico[i].capacidad=n;
   }

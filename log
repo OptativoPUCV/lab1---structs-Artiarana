@@ -260,3 +260,32 @@ In file included from test.c:2:
 cc1: all warnings being treated as errors
 Compilation failed
 365565f
+Thu 09 Mar 2023 10:08:44 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   84 |   if (vectorEstatico=NULL) exit();
+      |       ^~~~~~~~~~~~~~
+exercises.c:84:28: error: too few arguments to function ‘exit’
+   84 |   if (vectorEstatico=NULL) exit();
+      |                            ^~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:617:13: note: declared here
+  617 | extern void exit (int __status) __THROW __attribute__ ((__noreturn__));
+      |             ^~~~
+In file included from test.c:5:
+exercises.c:90:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   90 |     if (vectorEstatico[i].datos=NULL) exit();
+      |         ^~~~~~~~~~~~~~
+exercises.c:90:39: error: too few arguments to function ‘exit’
+   90 |     if (vectorEstatico[i].datos=NULL) exit();
+      |                                       ^~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:617:13: note: declared here
+  617 | extern void exit (int __status) __THROW __attribute__ ((__noreturn__));
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5f2c588
