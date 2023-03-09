@@ -6,3 +6,9 @@ Thu 09 Mar 2023 03:48:01 PM UTC:
  tests:  0|7
 total_score: 0/70
 f08f509
+Thu 09 Mar 2023 03:50:22 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  1|6
+total_score: 10/70
+4b3eb28
