@@ -79,7 +79,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
 
-  Vector vector[n];
+  Vector vectorEstatico[n];
 
 for (short int i = 0; i<n; i++)
   {
