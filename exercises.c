@@ -87,7 +87,7 @@ for (short int i = 0; i<n; i++)
     vectorEstatico[i].capacidad=n;
   }
 
-   return vectorEstatico
+   return vectorEstatico;
 }
 
 /*
