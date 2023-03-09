@@ -303,3 +303,9 @@ exercises.c:90:9: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 2b122e4
+Thu 09 Mar 2023 10:09:07 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  8|0
+total_score: 70/70
+8ff9bb1
