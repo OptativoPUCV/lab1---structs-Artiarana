@@ -136,3 +136,14 @@ Thu 09 Mar 2023 09:35:22 PM UTC:
  tests:  4|3
 total_score: 40/70
 8250b14
+Thu 09 Mar 2023 09:36:08 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:99:13: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   99 |   v[i].datos=valor;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+35c6f8d
