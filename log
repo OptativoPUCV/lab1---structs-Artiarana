@@ -70,3 +70,20 @@ exercises.c:90:11: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 b61a0df
+Thu 09 Mar 2023 09:32:10 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:26: error: expected expression before ‘]’ token
+   90 |    return vectorEstatico[];
+      |                          ^
+exercises.c:82:10: error: variable ‘vectorEstatico’ set but not used [-Werror=unused-but-set-variable]
+   82 |   Vector vectorEstatico[n];
+      |          ^~~~~~~~~~~~~~
+exercises.c:91:1: error: control reaches end of non-void function [-Werror=return-type]
+   91 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+935703d
