@@ -101,3 +101,16 @@ exercises.c:91:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 1fa4b36
+Thu 09 Mar 2023 09:32:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:90:25: error: expected ‘;’ before ‘}’ token
+   90 |    return vectorEstatico
+      |                         ^
+      |                         ;
+   91 | }
+      | ~                        
+Compilation failed
+b121d73
