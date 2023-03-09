@@ -164,3 +164,24 @@ Thu 09 Mar 2023 09:43:16 PM UTC:
  tests:  6|2
 total_score: 50/70
 1b3ceb6
+Thu 09 Mar 2023 09:53:10 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:123:22: error: ‘capacidad’ undeclared (first use in this function)
+  123 |   for (size_t i=0; i<capacidad;i++)
+      |                      ^~~~~~~~~
+exercises.c:123:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:124:14: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  124 |     c[i]=a[i]+b[i];
+      |          ~~~~^~~~~
+      |           |    |
+      |           |    Vector
+      |           Vector
+exercises.c:121:11: error: unused variable ‘largo’ [-Werror=unused-variable]
+  121 | short int largo=a->capacidad;
+      |           ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+68a80fc

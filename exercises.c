@@ -29,7 +29,7 @@ void arrayMaxMin(int *arreglo, int n, int *ptrmax, int *ptrmin) {
 
   int max=arreglo[0],min=arreglo[0];
 
-  for (short int i=0;i<n;i++)
+  for (size_t i=0;i<n;i++)
     {
       max= arreglo[i]>max ? arreglo[i] :max;
       min= arreglo[i]<min ? arreglo[i] :min;
@@ -115,8 +115,14 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
+//asumiendo tienen el mismo largo, ya que sino no se puede sumar
 void sumaV(Vector * a, Vector * b, Vector * c) {
 
+short int largo=a->capacidad;
+
+  for (size_t i=0; i<capacidad;i++)
+    c[i]=a[i]+b[i];
+  
 }
 
 /*
